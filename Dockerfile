@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-rc-buster
 ENV PYTHONUNBUFFERED 1
 
 # Install the build tools
@@ -11,4 +11,3 @@ WORKDIR /code
 # Install requirements for the covid charts script
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
-
